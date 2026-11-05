@@ -1,323 +1,258 @@
-export default function HomePage() {
-  return (
-    <>
-      {/* ==================== ШАПКА ==================== */}
-      <header className="bg-white py-4 shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          {/* Логотип */}
-          <a href="#" className="text-2xl font-bold text-[#1a2a52]">
-            BOXPACK
-          </a>
+export default function Home() { 
+return (
+    <div className="w-full min-h-screen bg-white text-black">
+    <header className="w-full h-[55px] bg-white flex items-center justify-between px-180 border-b border-gray-100">
 
-          {/* Навигация */}
-          <nav className="hidden items-center gap-8 md:flex">
-            <a
-              href="#steps"
-              className="text-sm font-medium text-gray-600 transition hover:text-[#1a2a52]"
-            >
-              Как начать
-            </a>
-            <a
-              href="#services"
-              className="text-sm font-medium text-gray-600 transition hover:text-[#1a2a52]"
-            >
-              Услуги
-            </a>
-            <a
-              href="#why"
-              className="text-sm font-medium text-gray-600 transition hover:text-[#1a2a52]"
-            >
-              Почему мы
-            </a>
-            <a
-              href="#contacts"
-              className="rounded-lg bg-[#1a2a52] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#2a3a62]"
-            >
-              Связаться
-            </a>
-          </nav>
-
-          {/* Мобильная кнопка меню */}
-          <button className="text-[#1a2a52] md:hidden" aria-label="Меню">
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+        <div className="text-[21px] font-extrabold text-[#1c2d54]">
+        BOXPACK
         </div>
-      </header>
 
-      {/* ==================== ПЕРВЫЙ ЭКРАН (HERO) ==================== */}
-      <section className="bg-[#1a2a52] py-16 text-white sm:py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            {/* Левая колонка — текст */}
+        <div className="hidden md:flex items-center gap-7 text-[15px] text-black">
+        <a href="#services" className=""><b>Услуги</b></a>
+        <a href="#steps" className=""><b>Как это работает</b></a>
+        <a href="#video" className=""><b>Видеофикация</b></a>
+        <a href="#calculator" className=""><b>Калькулятор</b></a>
+        <a href="#cases" className=""><b>Кейсы</b></a>
+        <a href="#contacts" className=""><b>Контакты</b></a>
+        </div>
+
+    </header>
+
+    <section className="w-full bg-[#1c2d54] text-white">
+
+        <div className="max-w-[1180px] mx-auto px-6 md:px-10 py-[75px]">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
             <div>
-              <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                Фулфилмент для вашего бизнеса
-              </h1>
-              <p className="mt-6 max-w-lg text-lg text-gray-300">
-                BOXPACK берёт на себя все операции с товаром: приёмка,
-                хранение, сборка, упаковка и доставка. Вы занимаетесь
-                продажами — мы всё остальным.
-              </p>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href="#contacts"
-                  className="rounded-lg bg-white px-7 py-3 text-sm font-semibold text-[#1a2a52] transition hover:bg-gray-100"
-                >
-                  Оставить заявку
-                </a>
-                <a
-                  href="#services"
-                  className="text-sm font-medium text-gray-300 underline underline-offset-4 transition hover:text-white"
-                >
-                  Узнать больше →
-                </a>
-              </div>
+            <p className="text-[13px] text-blue-200 mb-5">
+                Автоматизированный фулфилмент
+            </p>
 
-              {/* Статистика — 3 карточки с цифрами */}
-              <div className="mt-12 grid grid-cols-3 gap-6">
-                <div className="rounded-xl bg-white/10 p-4 backdrop-blur">
-                  <p className="text-3xl font-bold">500+</p>
-                  <p className="mt-1 text-xs text-gray-300">Клиентов</p>
-                </div>
-                <div className="rounded-xl bg-white/10 p-4 backdrop-blur">
-                  <p className="text-3xl font-bold">50 000</p>
-                  <p className="mt-1 text-xs text-gray-300">Заказов в месяц</p>
-                </div>
-                <div className="rounded-xl bg-white/10 p-4 backdrop-blur">
-                  <p className="text-3xl font-bold">99,9%</p>
-                  <p className="mt-1 text-xs text-gray-300">Точность сборки</p>
-                </div>
-              </div>
+            <h1 className="text-[36px] md:text-[48px] font-bold leading-[1.15]">
+                Фулфилмент,
+                <br />
+                который держит
+                <br />
+                сроки и репутацию
+            </h1>
+
+            <p className="text-[14px] text-blue-100 mt-5 leading-[1.5] max-w-[470px]">
+                Автоматизированная упаковка, высокоточная обработка заказов
+                и отправка в день поступления. Мы берем на себя хранение,
+                сборку, маркировку и логистику.
+            </p>
+
+            <div className="flex items-center gap-6 mt-7">
+
+                <a href="#calculator" className="text-[13px] font-semibold">
+                Рассчитать стоимость 
+                </a>
+
+                <a href="#contacts" className="border border-blue-200 rounded px-4 py-2 text-[12px]">
+                Получить консультацию
+                </a>
+
             </div>
 
-{/* Правая колонка — место под видео */}
-            <div className="relative">
-              <div className="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-white/30 bg-white/5">
-                <div className="text-center">
-                  <svg
-                    className="mx-auto h-16 w-16 text-white/40"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <p className="mt-3 text-sm text-gray-400">
-                    Видео о компании
-                  </p>
+            <div className="grid grid-cols-3 gap-3 mt-10 max-w-[510px]">
+
+                <div className="bg-white/10 rounded-lg p-4">
+                <p className="text-[19px] font-bold">5000+</p>
+                <p className="text-[10px] text-blue-200">заказов в день</p>
                 </div>
-              </div>
+
+                <div className="bg-white/10 rounded-lg p-4">
+                <p className="text-[19px] font-bold">99.8%</p>
+                <p className="text-[10px] text-blue-200">точность сборки</p>
+                </div>
+
+                <div className="bg-white/10 rounded-lg p-4">
+                <p className="text-[19px] font-bold">FBO/FBS</p>
+                <p className="text-[10px] text-blue-200">все маркетплейсы</p>
+                </div>
+
             </div>
-          </div>
+
+            </div>
+
+            <div id="video" className="w-full aspect-video bg-[#d1d5df] rounded-lg flex items-center justify-center">
+
+            <p className="text-[12px] text-gray-700">
+                Видео автоматизированной упаковочной линии
+            </p>
+
+            </div>
+
         </div>
-      </section>
 
-      {/* ==================== КАК НАЧАТЬ РАБОТАТЬ С НАМИ (7 шагов) ==================== */}
-      <section id="steps" className="bg-gray-50 py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#1a2a52] sm:text-4xl">
+        </div>
+
+    </section>
+
+    <section id="steps" className="w-full bg-white py-[65px]">
+
+        <div className="max-w-[1050px] mx-auto px-6">
+
+        <div className="text-center">
+
+            <h2 className="text-[25px] font-bold">
             Как начать работать с нами
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            7 простых шагов — и ваш товар уже на нашем складе, готовый к
-            отправке покупателям
-          </p>
+            </h2>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
-            {/* Шаг 1 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                1
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Оставляете заявку
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Заполняете форму на сайте или звоните нам
-              </p>
-            </div>
+            <p className="text-[13px] text-gray-600 mt-3">
+            Подключение занимает всего несколько дней. Все процессы максимально автоматизированы.
+            </p>
 
-            {/* Шаг 2 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                2
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Получаете расчёт
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Мы считаем стоимость услуг под ваш товар
-              </p>
-            </div>
-
-            {/* Шаг 3 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                3
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Подписываем договор
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Согласовываем условия и фиксируем цены
-              </p>
-            </div>
-
-            {/* Шаг 4 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-
-4
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Отгружаете товар
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Привозите или отправляете груз на наш склад
-              </p>
-            </div>
-
-            {/* Шаг 5 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                5
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Интегрируемся
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Подключаем вашу CRM или интернет-магазин
-              </p>
-            </div>
-
-            {/* Шаг 6 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                6
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Мы принимаем товар
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Сверяем количество и размещаем на складе
-              </p>
-            </div>
-
-            {/* Шаг 7 */}
-            <div className="rounded-[10px] bg-white p-5 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a2a52] text-sm font-bold text-white">
-                7
-              </div>
-              <h3 className="mt-4 text-sm font-semibold text-[#1a2a52]">
-                Начинаем работу
-              </h3>
-              <p className="mt-2 text-xs text-gray-500">
-                Принимаем и обрабатываем заказы покупателей
-              </p>
-            </div>
-          </div>
         </div>
-      </section>
 
-      {/* ==================== УСЛУГИ ФУЛФИЛМЕНТА (7 карточек) ==================== */}
-      <section id="services" className="bg-white py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#1a2a52] sm:text-4xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 1</p>
+            <h3 className="text-[14px] font-bold mt-2">Оставляете заявку</h3>
+11:58
+<p className="text-[11px] text-gray-400 mt-2">Через сайт или Telegram</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 2</p>
+            <h3 className="text-[14px] font-bold mt-2">Получаете расчет</h3>
+            <p className="text-[11px] text-gray-400 mt-2">Под ваш объем и формат работы</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 3</p>
+            <h3 className="text-[14px] font-bold mt-2">Подписываем договор</h3>
+            <p className="text-[11px] text-gray-400 mt-2">Через ЭДО</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 4</p>
+            <h3 className="text-[14px] font-bold mt-2">Принимаем товар</h3>
+            <p className="text-[11px] text-gray-400 mt-2">От поставщика или транспортной компании</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 5</p>
+            <h3 className="text-[14px] font-bold mt-2">Автоматизированная упаковка</h3>
+            <p className="text-[11px] text-gray-400 mt-2">С индивидуальным входным контролем</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 6</p>
+            <h3 className="text-[14px] font-bold mt-2">Отправляем</h3>
+            <p className="text-[11px] text-gray-400 mt-2">На маркетплейсы по всей России</p>
+            </div>
+
+            <div className="bg-[#f0f0f0] border-t-[4px] border-gray-300 rounded-lg p-5 min-h-[145px]">
+            <p className="text-[11px] font-bold">ШАГ 7</p>
+            <h3 className="text-[14px] font-bold mt-2">Получаете результат</h3>
+            <p className="text-[11px] text-gray-400 mt-2">Отчеты и прозрачная статистика</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section id="services" className="w-full bg-[#f7f7f7] py-[70px]">
+
+        <div className="max-w-[1050px] mx-auto px-6">
+
+        <div className="text-center">
+
+            <h2 className="text-[25px] font-bold">
             Услуги фулфилмента
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            Полный цикл работы с товаром — от приёмки на складе до доставки
-            конечному покупателю
-          </p>
-          </div>
-          </section>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {/* Услуга 1 — Приёмка товара */}
-            <div className="rounded-[10px] border border-gray-200 p-6 transition hover:border-[#1a2a52] hover:shadow-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                <svg className="h-6 w-6 text-[#1a2a52]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-[#1a2a52]">Приёмка товара</h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Разгрузка, сверка количества, проверка качества и маркировка товара
-              </p>
-            </div>
+            </h2>
+
+            <p className="text-[13px] text-gray-600 mt-3">
+            Полный цикл обработки товаров от приемки до доставки.
+            </p>
+
+        </div>
+
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Приемка и сортировка</h3>
+            <p className="text-[11px] text-gray-400 mt-3">Принимаем товары поставщиков и проверяем их на соответствие требованиям.</p>
             </div>
 
-            {/* Услуга 2 — Хранение */}
-            <div className="rounded-[10px] border border-gray-200 p-6 transition hover:border-[#1a2a52] hover:shadow-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                <svg className="h-6 w-6 text-[#1a2a52]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-[#1a2a52]">Хранение</h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Ответственное хранение на современном складе класса А с климат-контролем
-              </p>
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Проверка на брак</h3>
+            <p className="text-[11px] text-gray-400 mt-3">Контроль качества перед отправкой на маркетплейсы.</p>
             </div>
 
-            {/* Услуга 3 — Сборка заказов */}
-            <div className="rounded-[10px] border border-gray-200 p-6 transition hover:border-[#1a2a52] hover:shadow-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                <svg className="h-6 w-6 text-[#1a2a52]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                </svg>
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-[#1a2a52]">Сборка заказов</h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Комплектация по заказам с точностью 99,9% и фотофиксацией
-              </p>
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Автоматизированная упаковка</h3>
+            <p className="text-[11px] text-gray-400 mt-3">Упаковка продукции с использованием современных технологий.</p>
             </div>
 
-            {/* Услуга 4 — Упаковка */}
-            <div className="rounded-[10px] border border-gray-200 p-6 transition hover:border-[#1a2a52] hover:shadow-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                <svg className="h-6 w-6 text-[#1a2a52]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-[#1a2a52]">Упаковка</h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Индивидуальная и транспортная упаковка, бережная упаковка хрупких товаров
-              </p>
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Сборка заказов</h3>
+11:58
+<p className="text-[11px] text-gray-400 mt-3">Быстрая комплектация заказов по вашим требованиям.</p>
             </div>
 
-            {/* Услуга 5 — Доставка */}
-            <div className="rounded-[10px] border border-gray-200 p-6 transition hover:border-[#1a2a52] hover:shadow-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                <svg className="h-6 w-6 text-[#1a2a52]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                </svg>
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-[#1a2a52]">Доставка</h3>
-              </div>
-              </>
-              )
-            }
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Отправка на маркетплейсы</h3>
+            <p className="text-[11px] text-gray-400 mt-3">FBO и FBS для всех крупных площадок.</p>
+            </div>
+
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Хранение товаров</h3>
+            <p className="text-[11px] text-gray-400 mt-3">Безопасное временное хранение продукции.</p>
+            </div>
+
+            <div className="bg-white border-t-[4px] border-[#28c1cf] rounded-lg p-6 min-h-[145px]">
+            <h3 className="text-[13px] font-bold">Интеграции</h3>
+            <p className="text-[11px] text-gray-400 mt-3">Синхронизация с маркетплейсами и CRM.</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section id="cases" className="w-full bg-[#1c2d54] py-[65px] text-white">
+
+        <div className="max-w-[1050px] mx-auto px-6">
+
+        <h2 className="text-center text-[25px] font-bold">
+            Почему выбирают BOXPACK
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+
+            <div className="bg-white/10 rounded-lg p-6">
+            <h3 className="text-[15px] font-bold">Скорость</h3>
+            <p className="text-[12px] text-blue-200 mt-3">До 20 000 товаров за смену и отправка день в день.</p>
+            </div>
+
+            <div className="bg-white/10 rounded-lg p-6">
+            <h3 className="text-[15px] font-bold">Точность</h3>
+            <p className="text-[12px] text-blue-200 mt-3">99.8% точность сборки благодаря автоматизации.</p>
+            </div>
+
+            <div className="bg-white/10 rounded-lg p-6">
+            <h3 className="text-[15px] font-bold">Надежность</h3>
+            <p className="text-[12px] text-blue-200 mt-3">Страхование товаров и круглосуточный контроль.</p>
+            </div>
+
+            <div className="bg-white/10 rounded-lg p-6">
+            <h3 className="text-[15px] font-bold">Поддержка</h3>
+            <p className="text-[12px] text-blue-200 mt-3">Персональный менеджер и оперативная помощь.</p>
+            </div>
+        </div>
+
+        </div>
+        
+    </section>
+    </div>
+)
+}
